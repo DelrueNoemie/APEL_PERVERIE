@@ -1,0 +1,46 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    color: #333;
+    line-height: 1.6;
+}
+
+.hero {
+    background: #005a9c;
+    color: white;
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.hero h1 {
+    margin: 0;
+    font-size: 3rem;
+}
+
+.hero p {
+    max-width: 700px;
+    margin: 20px auto 0;
+}
+
+section {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 50px 20px;
+}
+
+h2 {
+    color: #005a9c;
+}
+
+.button {
+    display: inline-block;
+    background: #005a9c;
+    color: white;
+    text-decoration: none;
+    padding: 12px 24px;
+    border-radius: 6px;
+}
+
+.button:hover {
+    background: #003f6d;
+}
