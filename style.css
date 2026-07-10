@@ -1,46 +1,273 @@
-body {
-    font-family: Arial, sans-serif;
+:root {
+
+    --blue: #173D7A;
+    --turquoise: #14B8B0;
+    --pink: #E63A7A;
+    --yellow: #F7BA2B;
+
+    --text: #263238;
+    --light: #f5f7fa;
+}
+
+* {
     margin: 0;
-    color: #333;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Nunito", sans-serif;
+    color: var(--text);
     line-height: 1.6;
 }
 
-.hero {
-    background: #005a9c;
-    color: white;
-    text-align: center;
-    padding: 80px 20px;
-}
-
-.hero h1 {
-    margin: 0;
-    font-size: 3rem;
-}
-
-.hero p {
-    max-width: 700px;
-    margin: 20px auto 0;
+img {
+    width: 100%;
+    display: block;
 }
 
 section {
-    max-width: 900px;
-    margin: 0 auto;
-    padding: 50px 20px;
+    padding: 5rem 8%;
 }
 
 h2 {
-    color: #005a9c;
+    color: var(--blue);
+    margin-bottom: 2rem;
+    font-size: 2rem;
 }
 
-.button {
-    display: inline-block;
-    background: #005a9c;
-    color: white;
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 8%;
+    background: white;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+}
+
+nav a {
     text-decoration: none;
-    padding: 12px 24px;
-    border-radius: 6px;
+    color: var(--blue);
+    font-weight: 700;
 }
 
-.button:hover {
-    background: #003f6d;
+.hero {
+
+    min-height: 90vh;
+
+    background-image:
+        linear-gradient(
+        rgba(255,255,255,.60),
+        rgba(255,255,255,.60)),
+        url('../images/hero.jpg');
+
+    background-size: cover;
+    background-position: center;
+}
+
+.hero-content {
+    max-width: 800px;
+    padding: 7rem 8%;
+}
+
+.hero h1 {
+
+    font-size: clamp(3rem, 6vw, 5rem);
+
+    color: var(--blue);
+    line-height: 1.1;
+}
+
+.hero p {
+    font-size: 1.4rem;
+    max-width: 600px;
+    margin-top: 1.5rem;
+}
+
+.buttons {
+    margin-top: 2rem;
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.btn {
+
+    display: inline-block;
+    padding: 1rem 1.8rem;
+
+    border-radius: 50px;
+
+    text-decoration: none;
+
+    font-weight: 700;
+
+    transition: .3s;
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+}
+
+.btn-primary {
+    background: var(--turquoise);
+    color: white;
+}
+
+.btn-secondary {
+    background: var(--pink);
+    color: white;
+}
+
+.btn-light {
+    background: white;
+    color: var(--blue);
+}
+
+.cards {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(auto-fit, minmax(240px, 1fr));
+
+    gap: 2rem;
+}
+
+.card {
+
+    background: white;
+
+    padding: 2rem;
+
+    border-radius: 20px;
+
+    box-shadow: 0 10px 35px rgba(0,0,0,.08);
+}
+
+.gallery {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(auto-fit, minmax(250px, 1fr));
+
+    gap: 1rem;
+}
+
+.gallery img {
+
+    height: 250px;
+    object-fit: cover;
+
+    border-radius: 16px;
+}
+
+.stats {
+    background: var(--light);
+}
+
+.stats-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(auto-fit, minmax(200px, 1fr));
+
+    gap: 2rem;
+}
+
+.stats-grid div {
+
+    background: white;
+
+    padding: 2rem;
+
+    text-align: center;
+
+    border-radius: 16px;
+}
+
+.stats-grid strong {
+
+    display: block;
+
+    color: var(--turquoise);
+
+    font-size: 2.4rem;
+}
+
+.timeline {
+
+    display: flex;
+
+    gap: 2rem;
+
+    flex-wrap: wrap;
+}
+
+.event {
+
+    flex: 1;
+
+    min-width: 220px;
+
+    background: white;
+
+    padding: 2rem;
+
+    border-left: 6px solid var(--pink);
+
+    box-shadow: 0 8px 25px rgba(0,0,0,.08);
+}
+
+.team-photo {
+
+    max-width: 900px;
+
+    margin: auto;
+
+    border-radius: 20px;
+}
+
+.center {
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.cta {
+
+    background:
+        linear-gradient(
+            135deg,
+            var(--pink),
+            #d81b60
+        );
+
+    color: white;
+
+    text-align: center;
+}
+
+.cta h2 {
+    color: white;
+}
+
+footer {
+
+    padding: 2rem;
+
+    text-align: center;
+
+    background: var(--blue);
+
+    color: white;
 }
