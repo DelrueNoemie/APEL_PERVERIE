@@ -1,197 +1,230 @@
 <!DOCTYPE html>
 <html lang="fr">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>APEL Primaire La Perverie</title>
-    <!-- Police Google Fonts -->
-    https://fonts.googleapis.com
-    https://fonts.gstatic.com
-    https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&display=swap
-    <!-- Feuille de style -->
-    style.css
+    <title>L'APEL Primaire de La Perverie</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap"
-        class="hero">
+<body>
 
-        <nav>
+    <header class="hero">
+        <nav class="navbar">
             <div class="logo">
-                APEL La Perverie
+                <span class="apel-text">apel</span> <span class="primaire-text">primaire</span>
+                <div class="sub-logo">LA PERVERIE</div>
             </div>
-
-            <ul>
-                <li>#missions</li>
-                <li>#actions</li>
-                <li>#agenda</li>
-                <li>#ca</li>
+            <ul class="nav-links">
+                <li><a href="#accueil" class="active">Accueil</a></li>
+                <li><a href="#missions">Nos missions</a></li>
+                <li><a href="#actions">Nos actions</a></li>
+                <li><a href="#calendrier">Calendrier</a></li>
+                <li><a href="#ca">Le CA</a></li>
+                <li><a href="#rejoindre" class="nav-btn">Rejoindre l'APEL</a></li>
             </ul>
         </nav>
 
         <div class="hero-content">
-
-            <h1>
-                L'APEL Primaire<br>
-                de La Perverie
-            </h1>
-
-            <p>
-                Des parents bénévoles qui font vivre l'école tout au long de l'année.
-            </p>
-
-            <div class="buttons">
-                <a>Découvrir nos actions</a>
-                <a rejoindrebtn btn-secondary>Rejoindre l'aventure</a>
+            <h1>L'APEL PRIMAIRE<br><span class="highlight">DE LA PERVERIE</span></h1>
+            <p class="hero-subtitle">Des parents bénévoles qui font vivre l'école tout au long de l'année.</p>
+            <div class="hero-buttons">
+                <a href="#actions" class="btn btn-teal">Découvrir nos actions <i class="fas fa-chevron-right"></i></a>
+                <a href="#rejoindre" class="btn btn-pink">Rejoindre l'aventure <i class="far fa-heart"></i></a>
             </div>
-
         </div>
-
     </header>
 
-    <section id="missions" class="section">
-
-        <h2>Nos missions</h2>
-
-        <div class="cards">
-
-            <article class="card">
-                <h3>🎉 Événements</h3>
-                <p>Créer des moments de partage pour les familles.</p>
-            </article>
-
-            <article class="card">
-                <h3>🎓 Projets</h3>
-                <p>Soutenir les actions pédagogiques.</p>
-            </article>
-
-            <article class="card">
-                <h3>🤝 Lien</h3>
-                <p>Renforcer la communauté scolaire.</p>
-            </article>
-
-            <article class="card">
-                <h3>💬 Représentation</h3>
-                <p>Porter la voix des parents.</p>
-            </article>
-
+    <section id="missions" class="container text-center">
+        <h2 class="section-title">NOS MISSIONS <span class="emoji">✏️</span></h2>
+        <p class="section-subtitle">L'APEL accompagne la vie de l'école et crée du lien entre les familles, les enfants et l'équipe éducative.</p>
+        
+        <div class="grid-4">
+            <div class="card card-mission">
+                <div class="icon-circle teal"><i class="fas fa-party-horn"></i></div>
+                <h3>Organiser des événements</h3>
+                <p>Des moments conviviaux pour rassembler petits et grands.</p>
+            </div>
+            <div class="card card-mission">
+                <div class="icon-circle pink"><i class="fas fa-gift"></i></div>
+                <h3>Soutenir les projets pédagogiques</h3>
+                <p>Nous finançons du matériel, des sorties et des projets au bénéfice des enfants.</p>
+            </div>
+            <div class="card card-mission">
+                <div class="icon-circle orange"><i class="fas fa-users"></i></div>
+                <h3>Créer du lien entre les familles</h3>
+                <p>Favoriser les rencontres et l'entraide au sein de la communauté scolaire.</p>
+            </div>
+            <div class="card card-mission">
+                <div class="icon-circle blue"><i class="fas fa-bullhorn"></i></div>
+                <h3>Porter la voix des parents</h3>
+                <p>Être à l'écoute et représenter les familles auprès de l'école et de l'OGEC.</p>
+            </div>
         </div>
     </section>
 
-    <section id="actions" class="section">
-
-        <h2>Nos actions en images</h2>
-
-        <div class="gallery">
-
-
-
+    <section id="actions" class="container bg-light text-center">
+        <h2 class="section-title">NOS ACTIONS EN IMAGES <span class="emoji">✨</span></h2>
+        
+        <div class="grid-6">
+            <div class="action-item">
+                <img src="images/fete_ecole.jpg" alt="Fête de l'école">
+                <span class="badge badge-teal">Fête de l'école</span>
+            </div>
+            <div class="action-item">
+                <img src="images/marche_noel.jpg" alt="Marché de Noël">
+                <span class="badge badge-pink">Marché de Noël</span>
+            </div>
+            <div class="action-item">
+                <img src="images/chocolats.jpg" alt="Opération chocolats">
+                <span class="badge badge-teal-dark">Opération chocolats</span>
+            </div>
+            <div class="action-item">
+                <img src="images/conferences.jpg" alt="Conférences parents">
+                <span class="badge badge-orange">Conférences parents</span>
+            </div>
+            <div class="action-item">
+                <img src="images/animations.jpg" alt="Animations enfants">
+                <span class="badge badge-blue">Animations enfants</span>
+            </div>
+            <div class="action-item">
+                <img src="images/projets.jpg" alt="Projets financés">
+                <span class="badge badge-pink">Projets financés</span>
+            </div>
         </div>
-
     </section>
 
-    <section class="section stats">
-
-        <h2>Quelques chiffres</h2>
-
-        <div class="stats-grid">
-
-            <div>
-                <strong>1500 €</strong>
-                <span>pour les projets pédagogiques</span>
+    <section class="container split-section">
+        <div class="split-left">
+            <h2 class="section-title">EN 2024-2025 <span class="emoji">✨</span></h2>
+            <div class="grid-2">
+                <div class="stat-card">
+                    <div class="stat-icon text-teal"><i class="fas fa-gift"></i></div>
+                    <div class="stat-number text-teal">1 500 €</div>
+                    <div class="stat-label">reversés aux projets pédagogiques</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon text-pink"><i class="fas fa-users"></i></div>
+                    <div class="stat-number text-pink">250</div>
+                    <div class="stat-label">familles présentes au marché de Noël</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon text-orange"><i class="fas fa-champagne- glasses"></i></div>
+                    <div class="stat-number text-orange">1</div>
+                    <div class="stat-label">fête de l'école organisée</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon text-pink"><i class="far fa-heart"></i></div>
+                    <div class="stat-number text-pink">Des dizaines</div>
+                    <div class="stat-label">de parents bénévoles mobilisés !</div>
+                </div>
             </div>
-
-            <div>
-                <strong>250</strong>
-                <span>familles présentes</span>
-            </div>
-
-            <div>
-                <strong>4</strong>
-                <span>évènements majeurs</span>
-            </div>
-
-            <div>
-                <strong>30+</strong>
-                <span>bénévoles mobilisés</span>
-            </div>
-
         </div>
 
+        <div class="split-right">
+            <h2 class="section-title">CALENDRIER DES ÉVÉNEMENTS <span class="emoji">✨</span></h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-date">OCTOBRE</div>
+                    <div class="timeline-icon icon-pink"><i class="fas fa-users"></i></div>
+                    <div class="timeline-desc"><strong>Assemblée Générale</strong><br>06/10/2025</div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-date">DÉCEMBRE</div>
+                    <div class="timeline-icon icon-teal"><i class="fas fa-tree"></i></div>
+                    <div class="timeline-desc"><strong>Marché de Noël</strong></div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-date">MARS</div>
+                    <div class="timeline-icon icon-orange"><i class="fas fa-cookie-bite"></i></div>
+                    <div class="timeline-desc"><strong>Opération Chocolats</strong></div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-date">JUIN</div>
+                    <div class="timeline-icon icon-blue"><i class="fas fa-flag"></i></div>
+                    <div class="timeline-desc"><strong>Fête de l'école</strong></div>
+                </div>
+            </div>
+        </div>
     </section>
 
-    <section id="agenda" class="section">
-
-        <h2>Calendrier des événements</h2>
-
-        <div class="timeline">
-
-            <div class="event">
-                <h3>Octobre</h3>
-                <p>Assemblée Générale</p>
+    <section id="ca" class="container split-section">
+        <div class="split-left">
+            <h2 class="section-title">LE CONSEIL D'ADMINISTRATION <span class="emoji">✨</span></h2>
+            <div class="ca-box">
+                <img src="images/trombinoscope.jpg" alt="Équipe du CA APEL" class="ca-img">
+                <p class="ca-caption">Une équipe de parents bénévoles engagés pour nos enfants.</p>
+                <a href="#" class="btn btn-pink text-center" style="display:block; max-width:200px; margin: 15px auto;">En savoir plus sur le CA <i class="fas fa-chevron-right"></i></a>
             </div>
-
-            <div class="event">
-                <h3>Décembre</h3>
-                <p>Marché de Noël</p>
-            </div>
-
-            <div class="event">
-                <h3>Mars</h3>
-                <p>Opération Chocolats</p>
-            </div>
-
-            <div class="event">
-                <h3>Juin</h3>
-                <p>Fête de l'école</p>
-            </div>
-
         </div>
 
-    </section>
-
-    <section id="ca" class="section">
-
-        <h2>Le Conseil d'Administration</h2>
-
-
-        <p class="center">
-            Une équipe de parents bénévoles engagés pour les enfants.
-        </p>
-
-    </section>
-
-    <section id="rejoindre" class="cta">
-
-        <h2>Et si vous faisiez partie de l'aventure ?</h2>
-
-        <p>
-            Quelques heures dans l'année suffisent pour contribuer à la vie de l'école.
-        </p>
-
-        <div class="buttons">
-
-            apel@exemple.fr
-            <a>
-                Nous contacter
-            </a>
-
-            <a>
-                Rejoindre le groupe WhatsApp
-            </a>
-
+        <div class="split-right">
+            <h2 class="section-title">COMMENT ÇA MARCHE ? <span class="emoji">✨</span></h2>
+            <p>Chacun peut aider à sa manière, selon ses disponibilités !</p>
+            <div class="grid-2" style="margin-top: 20px;">
+                <div class="step-card">
+                    <i class="far fa-clock text-blue"></i>
+                    <p>Quelques heures dans l'année</p>
+                </div>
+                <div class="step-card">
+                    <i class="far fa-heart text-pink"></i>
+                    <p>Un coup de main ponctuel</p>
+                </div>
+                <div class="step-card">
+                    <i class="far fa-lightbulb text-orange"></i>
+                    <p>Des idées bienvenues</p>
+                </div>
+                <div class="step-card">
+                    <i class="fas fa-users text-blue-dark"></i>
+                    <p>Ou rejoindre le CA si l'envie vous dit !</p>
+                </div>
+            </div>
+            <div class="citation text-teal">
+                Chaque petite contribution fait une grande différence !
+            </div>
         </div>
+    </section>
 
+    <section id="rejoindre" class="cta-section">
+        <div class="container">
+            <h2>ET SI VOUS FAISIEZ PARTIE DE L'AVENTURE ? <span class="emoji">✨</span></h2>
+            <p>Rejoignez les amis de l'APEL et participez à une belle aventure humaine au service des enfants de La Perverie.</p>
+            
+            <div class="cta-buttons">
+                <a href="mailto:apel.primaire@la-perverie.fr" class="cta-btn"><i class="far fa-envelope"></i> Nous contacter <small>apel.primaire@la-perverie.fr</small></a>
+                <a href="#" class="cta-btn"><i class="fab fa-whatsapp"></i> Rejoindre notre groupe WhatsApp</a>
+                <a href="#" class="cta-btn"><i class="fas fa-pen"></i> Je souhaite être informé(e)</a>
+            </div>
+        </div>
     </section>
 
     <footer>
-
-        <p>
-            © APEL Primaire La Perverie
-        </p>
-
+        <div class="container footer-grid">
+            <div>
+                <span class="apel-text">apel</span> <span class="primaire-text">primaire</span>
+                <div class="sub-logo" style="color: #333;">LA PERVERIE</div>
+                <p style="margin-top: 10px; font-style: italic; color: #00a896;">L'école de nos enfants se construit aussi avec nous !</p>
+            </div>
+            <div>
+                <h4>LIENS UTILES</h4>
+                <ul class="footer-links">
+                    <li><a href="http://www.la-perverie.fr">La Perverie</a></li>
+                    <li><a href="http://www.apel.fr">APEL Nationale</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4>SUIVEZ-NOUS</h4>
+                <a href="#" class="social-link"><i class="fab fa-facebook"></i> @apel.perverie.primaire</a>
+            </div>
+            <div class="text-center">
+                <p><small>Scannez-moi !</small></p>
+                <div style="background: #ccc; width: 80px; height: 80px; margin: 5px auto; display:flex; align-items:center; justify-content:center; font-size:10px; color:#555;">[QR CODE]</div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            APEL Primaire La Perverie – Association de parents d'élèves de l'enseignement libre ❤️
+        </div>
     </footer>
 
 </body>
-
 </html>
